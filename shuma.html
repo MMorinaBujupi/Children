@@ -1,0 +1,102 @@
+<html>
+<head>	
+</head>
+<body>
+
+
+
+<p id="pr"></p>
+<script>
+
+var m=prompt("Shenoni sa parametra ka funksioni(Max 4)")
+var n=prompt("Shenoni 1 per shumen,2 per diferencen")
+
+if (m==2){
+var p1=prompt("numri1")
+var p2=prompt("numri2")
+if (n==1){
+function shuma(a,b){
+var a;
+var b;
+z= a*1 + b*1;
+return z;
+     }
+
+document.getElementById("pr").innerHTML=shuma(p1,p2);
+}
+else if(n==2){
+function diferenca(a,b){
+
+var z=0;
+z=a*1 - b*1;
+return z;
+     }
+document.getElementById("pr").innerHTML=diferenca(p1,p2);
+}
+else 
+document.write("Ju lutem shenoni 1 ose 2")
+}
+else if(m==3)
+{
+var p1=prompt("numri1")
+var p2=prompt("numri2")
+var p3=prompt("Numri3")
+if (n==1){
+function shuma(a,b,c){
+var z=a*1 + b*1 + c*1;
+return z;
+     }
+
+document.getElementById("pr").innerHTML=shuma(p1,p2,p3);
+}
+else if(n==2){
+function diferenca(a,b,c){
+
+var z=a*1 - b*1 - c*1;
+return z;
+     }
+document.getElementById("pr").innerHTML=diferenca(p1,p2,p3);
+}
+else 
+document.write("Ju lutem shenoni 1 ose 2")
+}
+else if(m==4)
+{
+var p1=prompt("numri1")
+var p2=prompt("numri2")
+var p3=prompt("Numri3")
+var p3=prompt("Numri4")
+if (n==1){
+function shuma(a,b,c,d){
+var z=a*1 + b*1 + c*1 + d*1;
+return z;
+     }
+
+document.getElementById("pr").innerHTML=shuma(p1,p2,p3,p4);
+}
+else if(n==2){
+function diferenca(a,b,c,d){
+
+var z=a*1 - b*1 - c*1 - d*1;
+return z;
+     }
+document.getElementById("pr").innerHTML=diferenca(p1,p2,p3,p4);
+}
+else 
+document.write("Ju lutem shenoni 1 ose 2")
+
+
+}
+
+else if(m>=5)
+document.write("Ky kalkulator nuk i llogarite funksionet me me shume se 4 variabla")
+else if(m==1)
+document.write("Per operacionin e mbledhjes dhe shumezimit duhen minimumi 2 variabla")
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<html>
+<head>
+ <style>
+ body
+ { 
+   text-align: center;
+   background-color: 	#E6E6FA;   
+ }
+ #col
+ {
+    border: 2px;
+	padding: 15px;
+	outline: 1px dotted black;
+    outline-offset: 5px;
+	background-image: url('te_drejtat_e_personave_me_afte.jpg');
+	background-size: 1400px 500px;
+	background-repeat: no-repeat;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+	-webkit-column-gap: 30px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 30px; /* Firefox */
+    column-gap: 30px;
+	-webkit-column-rule-style: dotted; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: dotted; /* Firefox */
+    column-rule-style: dotted;
+	-webkit-column-rule-width: 2px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 2px; /* Firefox */
+    column-rule-width: 2px;
+	resize: vertical;
+    overflow: auto
+}
+
+@font-face {
+    font-family: myFont;
+    src: url('Tillana-Bold.ttf');
+}
+p:first-child {
+    font-family: myFont, Helvetica, Arial, sans-serif;
+	 color: blue;
+}
+.pv
+{ 
+   margin: 10px 10px 10px 300px;
+}
+#video1
+{
+   margin: 10px 10px 10px 300px;
+}
+#frame {
+    width: 140px;
+    height: 25px;
+    background: red;
+	margin: 10px 10px 10px 300px;
+    position: relative;
+    -webkit-animation: mymove 4s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 4s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0%   {top: 0px; left: 0px; background: purple;}
+    25%  {top: 0px; left: 300px; background: blue;}
+}
+</style>
+</head>
+  <body>
+ <p>Prinderit qe kane femije me aftesi te veqanta:</p>
+  <div id="col">
+    <strong>Me mijëra janë fëmijët që diagnostikohen me aftësi të kufizuara. Ky numër r ritet me rritjen e lindjeve. Prindërit që kanë fëmijë me nevoja të veçanta e dinë se arsimi fillon në shtëpi.
+Shpesh këto ndërlikime e bëjnë detyrën edhe më të vështirë. Këta fëmijë të veçantë kanë nevojë për prindërit që kujdesen për ta. Është shumë e vërtetë që në rastin e arsimimit të fëmijëve me aftësi të kufizuara, vetë arsimi fillon që në shtëpi. Këtu kemi disa mjete mësimore dhe këshilla për prindërit me fëmijë që kanë nevoja të veçanta para se të hyjnë në klasën e parë.
+Nëse vë re ndonjë zhvillim të vonuar tek fëmija yt, këshillohu menjëherë me mjekun dhe kërkoi atij që të të drejtojë tek specialisti përkatës.
+Sigurohu që fëmija yt është diagnostikuar në mënyrën e duhur. Shpesh specialistit do t’i duhet që ta vizitojë fëmijën disa herë, në vende të ndryshme dhe në prani të njerëzve të ndryshëm.
+Informohu rreth çrregullimeve të ndryshme dhe kualifikimet e specialistit që do të bëjë testimin. Ja një përmbledhje e shkurtër e çrregullimeve kryesore.
+Vonesë mendore: zhvillim i ngadalshëm
+E folura dhe gjuha: dëmtim në shprehje dhe në të kuptuar.
+Paaftësi fizike: vizuale, motorike (të folurit), ose gjendje të tjera.
+Paaftësi emocionale: vështirësi të sjelljes sociale.
+Paaftësi në mësim: shtrembërime të aftësisë për të kuptuar.
+Mos prit shumë. Disa prindër mendojnë se fëmijëve do tu largohen vetë me kalimin e kohës këto çrregullime kështu që ata janë indiferentë ndaj diagnostikimit dhe trajtimit. Kjo mund të jetë një gabim fatal në aspektin e arsimimit të fëmijës tënd. Për fëmijët 2 ose më të vegjël, mund të presësh derisa të arrijnë moshën e kopshtit.
+Shko rregullisht në takime me prindër në mënyrë që të kesh një pamje të qartë arritjeve zhvillimore të fëmijës tënd.
+Ndihmoje fëmijën para se shkolla të kthehet në xhungël.
+shprehja nëpërmjet shenjave mund t’i ndihmojë disa fëmijë në përmirësimin e të folurës dhe të mësuarit me kalimin e kohës.
+sigurohu që të gjesh kohën për të luajtur dhe për t’iu lexuar fëmijëve, qoftë edhe për pak minuta.
+ki kujdes sinjalet që tregojnë se diçka nuk është në rregull. Prindërit duhet të kenë një njohuri të përgjithshme për tiparet karakteristike që ka zhvillimi në secilën moshë.
+bisedo me specialistin që mban nën vëzhgim fëmijën tënd. Të dhëna të qarta dhe të detajuara ndihmojnë në përcaktimin e një diagnoze të saktë.
+mos u lodh kot t’ia hedhësh fajin të tjerëve apo vetes tënde. Fëmijës i nevojitet vëmendja jote ekskluzive. Përqendrohu tek zgjidhjet dhe jo vetëm tek problemi.</strong>
+  </div>
+  <br>
+<p id="frame" style="width=50px height=50px; padding: 30px;"><i>Solidarizohu me ta:</i></p>
+  <div style="text-align:left"> 
+  <p class="pv">
+  <button onclick="playPause()" id="play" >Play/Pause</button> 
+  <button onclick="makeBig()">Large</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  </p>
+  <video id="video1" width="600" controls>
+    <source src="FEMIJET ME AFTESI TE KUFIZUAR.mp4" type="video/mp4">
+    Shfletuesi juaj nuk mbeshtet videot me HTML5.
+  </video>
+</div> 
+<script>
+   
+    
+ var myVideo=document.getElementById("video1"); 
+
+function playPause()
+{ 
+if (myVideo.paused) 
+  myVideo.play(); 
+else 
+  myVideo.pause(); 
+} 
+
+function makeBig()
+{ 
+myVideo.width=800; 
+} 
+
+function makeSmall()
+{ 
+myVideo.width=320; 
+} 
+
+function makeNormal()
+{ 
+myVideo.width=600; 
+} 
+</script>
+  </body>
+</html>

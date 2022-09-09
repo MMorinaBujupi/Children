@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>P&euml;r ne</title>
+	<script type="text/javascript" language="Javascript" >
+function validateForm() {
+   
+    if (document.forms["myForm"]["Emri"].value == "") {
+        alert("Emri duhet të plotësohet!");
+        return false;
+    }
+	
+	if (document.forms["myForm"]["Mbiemri"].value == "") {
+        alert("Mbiemri duhet të plotësohet!");
+        return false;
+    }
+    if (document.forms["myForm"]["Komuna"].value == "") {
+        alert("Qyteti duhet të plotësohet!");
+        return false;
+    }
+    if (document.forms["myForm"]["Email"].value == "") {
+        alert("E-mail duhet të plotësohet!");
+        return false;
+    }
+		
+}
+</script>
+	<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false
+    &amp;key=ABQIAAAA8JXb0YDVa4otOLnM95w50BSeC_rwpfX9fQb-nbMGMDH8BB4BVRTjxWS14T5WLZf7TpXaaAtk_SIb-Q"
+    type="text/javascript">
+  </script>
+	<style type="text/css">
+	body
+	{
+		background-image: url("Photos/10.jpg");
+		background-repeat: repeat;
+		background-position:fixed;
+		
+	}
+	#RegisterDiv
+{
+	width:300px;
+	height:650px;
+	background-color:#E6E6E6;
+	float: left;
+	margin-top:5px;
+	border:solid 2px #2291FF;
+	border-top-right-radius:5px;
+	border-bottom-right-radius:5px;
+	box-shadow:0px 0px 5px 5px #999;
+	
+}
+#form1
+{
+	width:500px;
+	color:black;
+	font-style:italic;
+	font-weight:bold;
+	padding-left:40px;
+}
+.clsinput
+{
+	width: 60px;
+	height: 40px;
+	float: left;
+	margin-left: 40px;
+	border:solid 1px #2291FF;
+	color: #2291FF;
+	cursor:pointer;
+	font-style:italic;
+	font-weight:bold;
+}
+.clsselkomento
+{
+	width:220px;
+	height:190px;
+	padding-left:5px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:20;
+	font-weight:bold;
+	font-style:italic;
+	border:solid 1px #2291FF;
+}
+.clssel
+{
+	width:220px;
+	height:30px;
+	padding-left:5px;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:20;
+	font-weight:bold;
+	font-style:italic;
+	border:solid 1px #2291FF;
+}
+.perne
+{
+	width:70px;
+	height:40px;
+	margin-top:25px;
+	margin-left:3px;
+	border-radius:10px;
+	box-shadow:0px 5px 5px 0px #999;
+	float:left;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	line-height:40px;
+	background-color:#FFF;
+	color:black;
+	border:solid 1px #2291FF;
+	-webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
+    transition: width 1s, height 1s, transform 1s;
+	
+}
+.perne:hover
+{
+	text-decoration:blink;
+	color:white;
+	background-color:#2291FF;
+	width: 70px;
+    height: 80px;
+}
+		#MainDiv
+		{
+			width:1000px;
+			height: 1050px;
+			margin-left: auto;
+			margin-right: auto;
+			background-color:transparent;
+		}
+		#DivQellimi
+		{
+			width: 955px;
+			height: 280px;
+			float: left;
+			background-color:gray;
+			margin-left: 20px;
+			border:solid 2px #2291FF;
+			border-radius: 5px;
+		}
+		#DivThemeluesit
+		{
+			width: 650px;
+			height: 680px;
+			float: left;
+			margin-left: 20px;
+			margin-top: 5px;
+			background-color: white;
+			border:solid 2px #2291FF;
+			border-top-right-radius:5px;
+			border-bottom-right-radius:5px;
+			box-shadow:0px 0px 5px 5px #999;
+		}
+		.fotothemeluesit
+		{
+			width: 100px;
+			height: 90px;
+			float: left;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		.paragrafthemeluesit
+		{
+			width: 500px;
+			height: 100px;
+			float: left;
+			margin-left: 10px;
+			margin-top: 10px;
+		}
+		.titulli
+		{
+			width: 850px;
+			height: 40px;
+			float: left;
+			margin-left: 20px;
+			border-top: dashed 1px #2291FF;
+			border-bottom: solid 2px #2291FF;
+			line-height: 40px;
+			font-size: 40px;
+			color: orange;
+		}
+		#copyright
+		{
+			width:998px;
+			height: 30px;
+			float: left;
+			margin-top: 28px;
+		}
+		.kendi
+		{
+			color:green;
+			font-weight: bold;
+			font-size: 24px;
+		}
+		.misioni
+		{
+			color: orange;
+			font-weight: bold;
+			font-size:20px;	
+		}
+		.anetaret
+		{
+			color: orange;
+			font-weight: bold;
+			font-size:20px;	
+		}
+		.address_input
+		{
+			height:20px;
+			border:solid 1px orange;
+			width: 550px;
+			font-family: Verdana;
+			font-style: italic;
+			color:green;
+			margin-left: 3px;
+		}
+		.submiti
+		{
+			width: 85px;
+			height: 25px;
+			box-shadow: 1px;
+			cursor: pointer;
+			color:blue;
+			border: solid 1px orange;
+		}
+	</style>
+	<script type="text/javascript">
+
+
+    var map;
+    var geocoder;
+
+    function initialize() {
+      map = new GMap2(document.getElementById("map_canvas"));
+      map.setCenter(new GLatLng(34, 0), 1);
+      geocoder = new GClientGeocoder();
+    }
+
+    function addAddressToMap(response) {
+      map.clearOverlays();
+      if (!response || response.Status.code != 200) {
+        alert("Shikoni faqen më poshtë,gjeni lokacionin!");
+      } else {
+        place = response.Placemark[0];
+        point = new GLatLng(place.Point.coordinates[1],
+                            place.Point.coordinates[0]);
+        marker = new GMarker(point);
+        map.setCenter(point, 13);
+        map.addOverlay(marker);
+		var addr = document.getElementById('address');
+		addr.firstChild.data = place.address;
+      }
+    }
+
+    function showLocation() {
+      var address = document.forms[0].q.value;
+      geocoder.getLocations(address, addAddressToMap);
+    }
+
+    function findLocation(address) {
+      document.forms[0].q.value = address;
+      showLocation();
+    }
+
+
+if (navigator.geolocation) {
+  
+   navigator.geolocation.getCurrentPosition(function(position) {  
+   s = position.coords.latitude+","+position.coords.longitude;
+	document.forms[0].q.value = s;
+	showLocation();
+ }); 
+  
+} else {
+  alert("Na vjen keq,kjo adresë lokacioni nuk përkrahet nga ky browser !");
+}  
+
+</script>
+</head>
+<body onload="initialize()">
+<div id="MainDiv">
+<p class="titulli">P&Euml;R NE</p><a href="Prinder.html" class="perne">Prind&euml;r</a>
+<div id="DivQellimi">
+<img src="Photos\kids.jpg" width="955" height="280">
+</div>
+<div id="DivThemeluesit">
+<h3 style="width:650px; height: 30px; border: solid 1px #2291FF; margin: 0; text-align: center; color: orange; line-height: 30px;">P&Euml;R NE</h3> 
+	<img src="Photos\about.png" class="fotothemeluesit">
+	<p class="paragrafthemeluesit"><span class="kendi">K&Euml;NDI P&Euml;R F&Euml;MIJ&Euml;</span><br>Kjo faqe ka p&euml;rmbajtje edukative-arsimore e cila iu kushtohet f&euml;mij&euml;ve.Faqja p&euml;rmban&euml; k&euml;to rubrika: Home,M&euml;sojm&euml;, K&euml;shilla, Filma, P&euml;r ne.
+	</p>
+	<p class="paragrafthemeluesit"><span class="misioni">Q&Euml;LLIMI</span><br>Kjo faqe ka p&euml; q&euml;llim q&euml; t&euml; iu ofroj&euml; mund&euml;si 
+	f&euml;mij&euml;ve t&euml; informohen nga fushat e ndryshme edukative e arsimore duke iu ofruar k&euml;shtu m&euml;sim n&euml; form&euml; sa m&euml; atraktive.
+	</p>
+	<p class="paragrafthemeluesit"><span class="anetaret">Themeluesit</span><br>
+	
+	Marigona Morina <a href="mail to marigona.morina25@outlook.com">marigona.morina25@outlook.com</a><br></p>
+<div style="float: left;">
+	<form action="#" onsubmit="showLocation(); return false;">
+      <p>
+        <b>Search for an address:</b>
+        <input type="text" name="q" value="" class="address_input" placeholder="Kërko lokacionin në hartë"/>
+        <input type="submit" name="find" class="submiti" value="Search" />
+
+      </p>
+    </form>
+    <div id="map_canvas" style="width: 650px; height: 185px;"></div>
+    </div>
+</div>
+<div id="RegisterDiv">
+	 <h2 style="padding-left:25px; color:#2291FF; font-family:Tahoma; font-style:italic;">Komento</h2>
+	<form id="form1" name="myForm" method="post" action="dergo.html" onsubmit="return validateForm()">
+				Emri :<br>
+				<input class="clssel" type="text" name="Emri" placeholder="Emri"><br>
+				Mbiemri :<br>
+				<input class="clssel" type="text" name="Mbiemri"placeholder="Mbiemri"><br>
+				Qyteti :<br>
+				<select class="clssel" name="Komuna" >
+				<option value="0">
+				<option value="1">Prishtin&euml;
+				<option value="2">Mitrovic&euml;
+				<option value="3">Pej&euml;
+				<option value="4">Prizren
+				<option value="5">Deqan
+				<option value="6">Sk&euml;nderaj
+				<option value="6">Drenas
+				<option value="6">Lipjan
+				</select><br>
+				Email Adresa :<br>
+					<input type="text" class="clssel" name="Email" placeholder="example@example.com" ><br><br>
+					Komenti juaj:<br>
+					 <textarea name="text" class="clsselkomento" id="text"  required></textarea><br>
+				Gjinia:<br>
+					M<input type="radio" name="Male" size="20">
+					F<input type="radio" name="Female" size="20"><br><br>
+					<input id="inputid1" class="clsinput" type="Reset" name="Cancel" value="Anulo">
+					<input id="inputid" class="clsinput" type="Submit" name="Register" value="D&euml;rgo" onclick="Submit()">
+			</form>
+            <a href="kryefaqja.html" class="perne">HOME</a>
+            <a href="mesojme.html" class="perne">M&Euml;SOJM&Euml;</a>
+            <a href="keshilla1.html" class="perne">K&Euml;SHILLA</a>
+            <a href="Filmaa.html" class="perne">FILMA</a>
+</div>
+<div id="copyright">
+	<p style=" margin-left:400px; text-align: left; line-height: 28px; margin-top: 0; font-size: 20px; font-weight: bold; color: black; ">COPYRIGHT&copyWEKIDS www.k&euml;ndip&euml;rf&euml;mij&euml;.com </p>
+</div>
+</div>
+</body>
+</html>

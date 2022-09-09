@@ -1,0 +1,271 @@
+<html>
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="learn2.css">
+
+</head>
+<body>
+
+<script>
+var emri=prompt("What is your name:(Si quheni)")
+document.write(emri+"  provo të pergjigjesh në pyetjet në vazhdim në menyre qe ta praktikosh anglishten")
+</script>
+<figure>
+<div id=figurat>
+<div class="katerkendeshi">
+<svg width="300" height="100">
+  <rect width="400" height="100" 
+  style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)" />
+Sorry, your browser does not support inline SVG.
+</svg>
+<p>Ngjyra e brendise se katerkendeshit(Anglisht)</p>
+<input id="ngjyra" type="text">
+
+<p>Ngjyra e kornizes se katerkendeshit(Anglisht)</p>
+<input id="ngjyra" type="text">
+
+<p>Si i thone  katerkendeshit(Anglisht)</p>
+<input id="ngjyra" type="text"></br>
+</br>
+
+</div>
+<div class="katrori">
+<svg width="400" height="180">
+  <rect x="50" y="20" rx="20" ry="20" width="150" height="150"
+  style="fill:red;stroke:black;stroke-width:5;opacity:0.5" />
+Sorry, your browser does not support inline SVG.
+</svg>
+<p>Ngjyra e brendise se katrorit(Anglisht)</p>
+<input id="ngjyra" type="text">
+
+<p>Ngjyra e kornizes se katrori(Anlight)</p>
+<input id="ngjyra" type="text">
+
+<p>Si i thonë  katrorit(Anglisht)</p>
+<input id="ngjyra" type="text">
+</br>
+
+</div>
+<div class="rrethi">
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+<p>Ngjyra e brendise se rrethit(Anglisht)</p>
+<input id="ngjyra" type="text">
+
+<p>Ngjyra e kornizes se rrethit(Anglisht)</p>
+<input id="ngjyra" type="text">
+
+<p>Si i thone  rrethit(Anglisht)</p>
+<input id="ngjyra" type="text">
+
+</div>
+</div>
+</figure>
+</hr>
+<div id="audio">
+<div id="audio3">
+<audio controls>
+
+  <source src="Photos/1.mp3" type="audio/mp3">
+	Shfletuesi juaj nuk perkrah video elementin.
+</audio>
+<div class="mesimie">
+<input  type="text" placeholder="Cila kohe po perdoret ne audio(Anlisht)"></br>
+<input  type="text" placeholder="Mbaresa e foljes"></br>
+<input  type="text" placeholder="Shenoni dhe perktheni disa nga fjalet e perdorura ne audio">
+</div>
+</div>
+
+<div id="audio2">
+<audio controls>
+
+  <source src="Photos/2.mp3" type="audio/mp3">
+	Shfletuesi juaj nuk perkrah video elementin.
+</audio>
+<div class="mesimi2">
+<input  type="text" placeholder="Cila kohe po perdoret ne audio(Anlisht)"></br>
+<input  type="text" placeholder="Mbaresa e foljes"><br>
+<input  type="text" placeholder="Forma mohore e saj">
+</div>
+</div>
+
+<div id="audio3">
+<audio controls>
+
+  <source src="Photos/3.mp3" type="audio/mp3">
+	Shfletuesi juaj nuk perkrah video elementin.
+</audio>
+<div class="mesimi1">
+<input  type="text" placeholder="Cila kohe po perdoret ne audio(Anlisht)"></br>
+<input  type="text" placeholder="Forma pyetëse"></br>
+<input  type="text" placeholder="Shenoni dhe perktheni disa nga fjalet e perdorura ne audio">
+</div>
+</div>
+</div>
+<div  id="video1" >
+
+  <video align="center" width="500" controls>
+    <source src="Photos/greeting.mp4" type="video/mp4" >
+   
+    Shfletuesi juaj nuk mbeshtet videot me HTML5.
+  </video>
+ 
+
+<div class="mesimiv">
+<input  type="text" placeholder="Shprehjet e perdorura"></br>
+<input  type="text" placeholder="Mundohuni te shpjegoni ngjarjen ne video(Anglisht)"></br>
+</div>
+</div>
+<!--Deklarimi dhe perdorimi i objekteve -->
+<div id="pergj">
+<div class="pergj1">
+<button onclick="pergjigjja1()">Answers I</button>
+<script>
+var fig1 = {lloji:"Rectangle", ngjyraBrenda:"Blue", ngjyraJasht:"Black"};
+var fig2 = {lloji:"Square", ngjyraBrenda:"Pink", ngjyraJasht:"Black"};
+fig2.ngjyraJasht="Grey";
+var fig3 = {lloji:"Circle", ngjyraBrenda:"Yellow", ngjyraJasht:"Green",kendet:"Nuk ka"};
+delete fig3.kendet;
+function pergjigjja1() {
+   document.getElementById("demo1").innerHTML =" The figure is a "+fig1.lloji+" filled with "+fig1.ngjyraBrenda+" and has a "+fig1.ngjyraJasht+" border ";
+    document.getElementById("demo2").innerHTML =" The figure is a "+fig2.lloji+" filled with "+fig2.ngjyraBrenda+" and has a "+fig2.ngjyraJasht+" border ";
+  document.getElementById("demo3").innerHTML =" The figure is a "+fig3.lloji+" filled with "+fig3.ngjyraBrenda+" and has a "+fig3.ngjyraJasht+" border ";	
+}
+</script>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+
+</div>
+<!--Perdorimi i Array-s the shtimi i elementeve ne Array -->
+<div class="pergj2">
+<button onclick="pergjigjja2()">Answers II</button>
+
+<script>
+var ans4 = ["Present Continuous Tense", "ing", "not+verb+ing"]
+
+function pergjigjja2() {
+   document.getElementById("demo4").innerHTML =ans4.join(" , ");;
+  
+}
+</script>
+<p id="demo4"></p>
+</div>
+
+<!--Perdorimi i Array-s the shtimi i elementeve ne Array,largimi i elementit te pare shtimi i nje elementi ne fillim te vargut -->
+<div class="pergj3">
+<button onclick="pergjigjja3()">Answers III</button>
+
+<script>
+var pershendetjet = ["Hi","Good Morning", "How are you"];
+pershendetjet.splice(2, 0, "Thank you","Sit down");
+pershendetjet.shift(); 
+pershendetjet.unshift("My name is");
+function pergjigjja3() {
+   document.getElementById("demo7").innerHTML =pershendetjet.toString();
+}
+
+</script>
+<p id="demo7"></p>
+<div id="Perkthim">
+<h3>Try to translate them</h3>
+<p id="numrat"></p>
+
+<script>
+var text = "";
+var objektet=["Table","Chair","Desk","Bag","Tree"]
+var i = 0;
+while (i < objektet.length) {
+    text += "<br>This object is a " + objektet[i];
+    i++;
+}
+document.getElementById("numrat").innerHTML = text;
+</script>
+
+<p id="frutat"></p>
+<script>
+var text = "";
+var fjalet=["Orange","Berry","Apple","Watermelon","Coconut"]
+for(i=0;i<fjalet.length;i++) 
+{
+    text += "<br>This fruit is a " + fjalet[i];
+    
+}
+document.getElementById("frutat").innerHTML = text;
+</script>
+<p id="question">Gjuha e cila konsiderohet gjuhe nderkombetare eshte : </p>
+
+<button onclick="gj()">Answer</button>
+
+<script>
+function gj() {
+    var str = document.getElementById("question").innerHTML; 
+    var res = str.replace(":", "Anglishtja");
+    document.getElementById("question").innerHTML = res;
+}
+</script>
+
+<p>Read the sentence below and notice verb ending letters:She is watching a movie</p>
+
+<button onclick="verb()">Answer</button>
+
+<p id="ing"></p>
+
+<script>
+function verb() {
+    var str = "She is watching a movie"; 
+    var res = str.match(/ing/g);
+    document.getElementById("ing").innerHTML = res;
+}
+</script>
+
+<!-- Perdorimi i callback -->
+<p id="use">The use of Past Simple Tende ?</p>
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        
+		$("#use").hide(1000);
+		
+       document.getElementById("pst").innerHTML= "Past Simple Tense is used to express the idea that an action started and finished at a specific time in the past.";
+});
+
+$("#exp").click(function(){
+        $("#exp2").append("<li>I saw you yesterday</li>");
+		$("#exp2").append("<li>She didn't come with us</li>");
+		 $("#exp2").after("<i>Hope you understood </i>");
+		 $("#exp2").before("<b>Notice verb form</b>");
+		
+
+});
+</script>
+
+<button>Answer</button>
+<p id="pst"></p>
+<button id="exp">Examples</button>
+<p id="exp2"></p>
+
+
+<div class="story">
+<h3>Practise your reading</h3>
+<p id=Story>The Crystal Ball
+In the south of Spain, there was a small village whose people were very joyful. The children played under the shades of trees in the gardens of their homes.
+A shepherd boy named Nasir stayed near the village with his father, mother and grandmother. Each morning, he took his herd of goats up the hills to find a suitable place for them to graze. In the afternoon he would return with them to the village. Each night his grandmother would tell him a story - the story of stars. This story really interested Nasir.
+On one of those days, as Nasir was watching his herd and playing his flute, he suddenly saw a wonderful light behind a flower bush. When he approached the bush, he saw a transparent and very beautiful crystal ball.
+The crystal ball was glittering like a colorful rainbow. Nasir carefully took it in his hand and turned it around. With surprise, suddenly, he heard a weak voice coming from the crystal ball. It said, “You can make a wish that your heart desires and I will fulfill it.”
+Nasir could not believe that he had actually heard a voice. When he made sure that he had indeed heard that voice from the crystal ball, he was very confused. He had so many wishes that he could not decide upon one particular wish. He said to himself, ‘if I wait till tomorrow I will remember many things. Then I will make my wish.’
+He put the crystal ball in a bag and, gathering the herd, happily returned to the village. He decided that he would not tell anyone about the crystal ball.
+On the following day also, Nasir could not decide what to wish for, because he really had everything he needed.
+The days passed as usual, but Nasir was still unable to make his wish. But he appeared to be very cheerful. The people around him were amazed to see the change in his disposition.
+One day, a boy followed Nasir and his herd and hid behind a tree. Nasir, as usual, sat in one corner, took out the crystal ball and for a few moments looked at it. The boy waited for the moment when Nasir would go to sleep. When Nasir did fall asleep after a while, the boy took the crystal ball and ran away.
+When he arrived at the village, he called all the people and showed them the crystal ball. The citizens of that village took the crystal ball in their hands and turned it around with surprise. Suddenly they heard a voice from inside the crystal ball, which said, “I can fulfill your wish.” One person took the ball and screamed, “I want one bag full of gold.” Another took the ball and said loudly, “I want two chests full of jewelry.” Some of them wished that they would have their own palace with a grand door made from pure gold, instead of their old houses. Some others wished for bags full of jewelry.
+All their wishes were fulfilled, but still the citizens of the village were not happy. They were jealous because the person that had a palace had no gold and the person that had the gold had no palace. For this reason, the citizens of the village were angry with each other and stopped speaking to each other. The gardens in the village where children used to play were no more. There were palaces and gold everywhere. The children became terribly unhappy. Only Nasir and his family were happy and contented. Every morning and afternoon he would play the flute.
+One day the children of the village took the crystal ball to Nasir. The children said to Nasir, “When we had a small village, we all were happy and joyful.” The parents also spoke. They said, “In one way or another, all of us are unhappy. The luxurious palaces and jewelry only bring us pain.”
+When Nasir saw that the people were really regretful, he said, “Even though the crystal ball asked me to wish for something, I have not done it so far. But if you really want everything to return to its own place, then I will wish for it.”
+Everyone happily agreed. Nasir took the crystal ball in his hand, turned it around and wished that the village would become the same as it was before. In a moment, the palaces disappeared, the green gardens appeared, and the same old village full of trees was there.
+Once again the people started to live happily and the children played under the shade of trees. Nasir continued his contented life every day, playing his flute at sunset. Its sweet sound was heard throughout the beautiful green village.
+Moral: We should be happy with whatever we have and not be greedy.</p>
+</div>
+</body>
+</html>

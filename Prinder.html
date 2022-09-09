@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prind&euml;rit</title>
+<script type="text/javascript" language="Javascript" >
+function validateForm() {
+   
+    if (document.forms["myForm"]["emri"].value == "") {
+        alert("Emri duhet të plotësohet!");
+        return false;
+    }
+	
+	if (document.forms["myForm"]["Mbiemri"].value == "") {
+        alert("Mbiemri duhet të plotësohet!");
+        return false;
+    }
+		
+}
+</script>
+
+	<script type="text/javascript">
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
+
+	<style type="text/css">
+	#maindiv
+	{
+		width:600px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+	}
+		#formadiv
+		{
+			width: 400px;
+			height: 500px;
+			float: left;
+			margin-left: 100px;
+			border:solid 1px blue;
+			margin-top: 10px;
+		}
+		.titulli
+		{
+			width: 300px;
+			height: auto;
+			float: left;
+			margin-left: 25px;
+			margin-top: 25px;
+			color: blue;
+			font-size: 20px;
+		}
+		#forma1
+		{
+			width: 400px;
+			height: auto;
+			margin-top: 85px;
+			font-size: 20px;
+			font-family: georgia;
+			margin-left: 40px;
+		}
+		.submit
+		{
+			width: 80px;
+			height: 80px;
+			float: left;
+			text-align: center;
+			color:green;
+			background-color: white;
+			margin-left: 100px;
+			border-radius: 50px;
+			font-size: 16px;
+			font-family: verdana;
+			border:solid 2px blue;
+			cursor: pointer;
+  		    background: red; 
+   		    background: -webkit-linear-gradient(red, yellow); 
+            background: -moz-linear-gradient(red, yellow);
+            background: linear-gradient(red, yellow);
+                        -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+		}
+		.submit:hover
+		{
+			width: 60px;
+    height: 60px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+		}
+		.reset
+		{
+			width: 80px;
+			height: 80px;
+			text-align: center;
+			color:green;
+			background-color: white;
+			margin-left: 50px;
+			border-radius: 50px;
+			font-size: 16px;
+			font-family: verdana;
+			border:solid 2px blue;
+			cursor: pointer;
+			background: red; 
+			background: -webkit-radial-gradient(red, yellow); 
+            background: -moz-radial-gradient(red, yellow);
+            background: radial-gradient(red, yellow);
+            -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+		}
+		.reset:hover
+		{
+
+    width: 60px;
+    height: 60px;
+    -webkit-transform: rotate(180deg); /* Safari */
+    transform: rotate(180deg);
+		}
+		.clslink
+{
+	width:70px;
+	height:40px;
+	float:right;
+	margin-right:3px;
+	margin-top:10px;
+	border-radius:10px;
+	box-shadow:0px 5px 5px 0px #999;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	text-align:center;
+	line-height:40px;
+	background-color:#FFF;
+	color:black;
+	border:solid 1px #2291FF;
+	
+}
+.clslink:hover
+{
+	text-decoration:blink;
+	color:white;
+	background-color:#2291FF;
+	-ms-transform: rotate(-20deg); 
+    -webkit-transform: rotate(-20deg); 
+    transform: rotate(-20deg);
+}
+	#div1
+	{
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+    border: 1px solid black;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+	}
+	
+	#div2
+	{
+	float: left;
+    width: 200px;
+    height: 100px;
+    margin: 5px;
+	}
+   </style>
+<body>
+<div id="maindiv">
+<div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <img src="Photos/img_logo.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="200" height="100">
+</div>
+
+<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<div id="formadiv">
+	<span class="titulli">K&euml;ndi për prind&euml;r</span>
+	<a href="PerNe.html" class="clslink">P&euml;rNe</a>
+	<form id="forma1" name="myForm" method="post" action="dergo.html" onsubmit="return validateForm()" >
+		Emri: <br><input type="text" name="emri"><br>
+		Mbiemri:<br><input type="text" name="Mbiemri"><br>
+		Sa ju p&euml;lqen kjo faqe: <br> Shum&euml;:<input type="radio" name="Shum&euml;">
+		<br> Jo shum&euml;:<input type="radio" name="jo shumë">
+		<br>Aspak: <input type="radio" name="aspak"><br><br>
+		Shkruani p&euml;r çdo v&euml;rejtje apo sugjerim.<br>
+		<textarea name="text" rows="5" cols="45" required></textarea><br><br>
+
+		<input type="submit" class="submit" name="Dërgo" value="Dërgo" onclick="Submit">
+		<input type="reset" class="reset" name="Anulo" value="Anulo">
+	</form>
+</div>
+</div>
+</body>
+</html>

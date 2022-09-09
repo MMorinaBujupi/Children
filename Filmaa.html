@@ -1,0 +1,318 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Filma</title>
+<style>
+
+h2{
+    font-size: 80px;
+	font-style: italic;
+	font-weight: bold;
+    background-color: lightblue;
+    padding-top: 50px;
+    padding-right: 320px;
+    padding-bottom: 50px;
+    padding-left: 250px;
+	text-shadow: 2px 2px purple;
+	}
+	
+body{
+     background-color: #e7e7e7;  /* Gray */
+	 background-image: url("Photos/bfoto.jpg"),url("Photos/bgfoto.jpg");
+	 background-position: right bottom, left top;
+	 margin-left: 200px;
+	 
+	}
+	 
+
+	 
+/* visited link */
+a:visited {
+    color: blue;
+       }
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+	font-size: 150%;
+	}
+	
+	
+	.button {
+    background-color:lightblue;
+    border: none;
+	color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: underline;
+	text-transform: capitalize;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+	outline: 3px solid aqua;
+    outline-offset: 15px;
+          }
+		  
+    h4.klasa
+ {
+    width:11em; 
+    border:10px solid #000000;
+    padding: 15px;
+    text-wrap:normal;
+    text-align: center;
+	margin-left:22em;
+	-webkit-border-image: url(Photos/imgborder.png) 30 round; 
+    -o-border-image: url(Photos/imgborder.png) 30 round; 
+    border-image: url(Photos/imgborder.png) 30 round;
+   
+ }
+ 
+ 
+ #panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: deepskyblue;
+    border: solid 1px deepskyblue;
+	font-family:Castellar;
+	color: blue;
+	text-shadow: 2px 2px 2px white;
+	margin-top:100px;
+	margin-bottom:100px;
+    margin-right:1em;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+ 
+#pp{
+	position:relative;
+	width:200px;
+	color:#000;
+	display:block;
+	font-size:24px;
+	text-decoration:none;
+	margin:0 auto;
+	border-radius:7px;
+	border:solid 1px yellow;
+	background:royalblue;
+	text-align:center;
+	padding:20px 26px;
+	
+	-webkit-transition: all 0.1s;
+	-moz-transition: all 0.1s;
+	transition: all 0.1s;
+	
+	-webkit-box-shadow: 0px 9px 0px bisque;
+    -moz-box-shadow: 0px 9px 0px bisque;
+     box-shadow: 0px 9px 0px bisque;
+}
+
+
+#pp:active{
+     -webkit-box-shadow: 0px 2px 0px bisque;
+     -moz-box-shadow: 0px 2px 0px bisque;
+      box-shadow: 0px 2px 0px bisque;
+      position:relative;
+      top:20px;
+        }
+	 
+	 
+  #id2{
+       margin-top:100px;
+	   margin-bottom:100px;
+	   margin-right:1em;
+	   padding:15px;
+	   }
+
+ 
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<!--Perdorimi i audio file-->
+<audio controls>
+<source src="Photos/herkuli.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+<h2 id="id1" onmousedown="mouseDown()" onmouseup="mouseUp()" align="center">Filma vizatimor&euml;</h2>
+<script>
+function mouseDown() {
+    document.getElementById("id1").style.color = "white";
+}
+
+function mouseUp() {
+    document.getElementById("id1").style.color = "blue";
+}
+</script>
+
+
+<button id="myBtn">Kliko!</button>
+
+<script>
+document.getElementById("myBtn").addEventListener("click", function(){
+    alert("Te dashur femije,ju deshirojme shikim te kendshem!");
+});
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $("#id1").mouseleave(function(){
+        alert("Have fun!");
+    });
+});
+</script>
+
+
+<table style="width:400px">
+<tr>
+<th>
+<table>
+<tr>
+<td><p><img src="Photos/tomi.png" style="width:300px; height:200px;"></img>
+<a href="https://www.youtube.com/watch?v=TAgPd_qnMoI" target="blank" onclick="this.innerHTML='Shikim t&euml; k&euml;ndsh&euml;m!'">Tom&Jerry</a></p><td>
+
+<td><p><img src="Photos/miki.jpeg" style="width:300px; height:200px;"></img>
+<a href="https://www.youtube.com/watch?v=3PADxcM_Vi8" target="blank" onclick="this.innerHTML='Shikim t&euml; k&euml;ndsh&euml;m!'">Mickey&Mouse</a></p><td>
+
+<td><p><img src="Photos/kesulekuqja.jpg" style="width:300px; height:200px;"></img>
+<a href="https://www.youtube.com/watch?v=leat2zdt-TY" target="blank" onclick="this.innerHTML='Shikim t&euml; k&euml;ndsh&euml;m!'">K&euml;sul&euml;kuqja</a></p><td>
+</tr>
+
+<td><p><img src="Photos/hirushja.jpg" style="width:300px; height:200px;"></img>
+<a href="https://www.youtube.com/watch?v=5wjsNYEAmXw" target="blank" onclick="this.innerHTML='Shikim t&euml; k&euml;ndsh&euml;m!'" >Hirushja</a></p><td>
+
+<td><p><img src="Photos/mbretiluan.jpg" style="width:300px; height:200px;"></img>
+<a href="https://www.youtube.com/watch?v=DIcFymwC2p0" target="blank" onclick="this.innerHTML='Shikim t&euml; k&euml;ndsh&euml;m!'">Mbreti Luan</a></p><td>
+
+<td><p><img src="Photos/frozen.jpg" style="width:300px; height:200px;"></img>
+<a href="https://www.youtube.com/watch?v=rVcVEEMO3sE" target="blank" onclick="this.innerHTML='Shikim t&euml; k&euml;ndsh&euml;m!'">Mbret&euml;resha e D&euml;bor&euml;s</a></p><td>
+
+<tr>
+<td><p><img src="Photos/borebardha.jpg" style="width:300px; height:200px;"></img>
+<a href=" https://www.youtube.com/watch?v=eKn4DBVylU8&list=PLNL4KM36IKK9LAf-iEqHtom3BIOFGfYj5&index=1" target="blank" onclick="this.innerHTML='Shikim t&euml; k&euml;ndsh&euml;m!'">Bor&euml;bardha</a></p><td>
+
+<td><p><img src="Photos/peterpan.png" style="width:300px; height:200px;"></img>
+<a href="https://www.youtube.com/watch?v=1GRs9fkCiRs" target="blank" onclick="this.innerHTML='Shikim t&euml; k&euml;ndsh&euml;m!'">PeterPan</a></p><td>
+
+<td><p><img src="Photos/ebukura.jpg" style="width:300px; height:200px;"></img>
+<a href="https://www.youtube.com/watch?v=1ozNDtFB7Oo&index=2&list=PLLfcSN4ZnUKTFMzeinMF5naaOjKCSkOTk" target="blank" onclick="this.innerHTML='Shikim t&euml; k&euml;ndsh&euml;m!'">E Bukura dhe Bisha</a></p><td>
+
+
+</tr>
+</table>
+
+<div id="rreth filmave">
+<button>
+<a href="meshumefilma.html" class="button">M&euml shum&euml</a>
+</button>
+</div> 
+
+
+<script> 
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+    });
+});
+</script>
+ 
+
+<div id="flip">Filmat m&euml; t&euml; rinj</div>
+<p id="panel">Snow White's New Adventure -2016 <br> 
+              The Secret Life of Pets -2016<br>
+			  The Jungle Book  -2016 <br>
+			  Finding Dory  -2016<br>
+			  The Wild Life -2016 <br>
+			  Ice Age:Collision Course  -2016 <br>
+			  Piper  -2016 <br>
+			  April and the Extraordinary World  -2015 <br>
+			  Blinky Bill the Movie  -2015 <br>
+			  The Good Dinosaur  -2015 <br>
+</p>
+
+
+
+<div style=" margin-left:29%; margin-top:2px; width:15%; height:40%">
+<!--Insertimi i videos-->
+<video id="video1" style=" margin-bottom:10px; margin-top:15px; width="300" height="300" controls>
+  <source src="Photos/letitgo.mp4" type="video/mp4">
+  
+  Your browser does not support the video tag.
+</video>
+<div style="float:left; margin-left:150px; margin-bottom:10%; width:10%; height:20%; ">
+<pre>                             <button id="pp" style=""  onClick="playpause()"> PLAY/PAUSE</button>           </pre>
+
+</div>
+</div>
+
+<!--Script per kontrolla te videos-->
+<script>
+var video=document.getElementById("video1");
+function playpause()
+{
+	if(video.paused)
+	video.play();
+	
+	else
+	video.pause();
+}
+function makebig()
+{
+	video.width=1000;
+}
+function makemedium()
+{
+	video.width=450;
+}
+function makesmall()
+{
+	video.width=320;
+}
+</script>
+
+<br></br>
+
+<p id="id2"></p>
+
+<script>
+var d = new Date();
+document.getElementById("id2").innerHTML = d;
+</script>
+
+
+<script>
+$(document).ready(function(){
+    $("#id2").mouseup(function(){
+        alert("Dita /Data /Ora");
+    });
+});
+</script>
+
+
+<h4 class="klasa" >Ju faleminderit!</h4>
+
+<button id="fshehe">Fshehe</button>
+<button id="shfaqe">Shfaqe</button>
+
+<script>
+$(document).ready(function(){
+    $("#fshehe").click(function(){
+        $("h4").hide();
+    });
+    $("#shfaqe").click(function(){
+        $("h4").show();
+    });
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+#figurat{
+	display:inline;
+	}
+	
+	body{
+		background-color:lightblue;
+		margin:1em,2em,1em,2em;
+		
+	}
+	.katerkendeshi,.rrethi{
+		float:left;
+		margin-left:5em;
+		margin-top:4.5em;
+	}
+	.katrori{
+		
+		float:left;
+		margin-left:6em;
+		margin-top:0em;
+		
+	}
+	#figurat input{
+		width:20em;
+			height:2.5em;
+		}
+	#audio input{
+		
+		width:20em;
+			height:2.5em;
+	}
+	
+	#audio2,#audio3{
+		float:left;
+		margin-left:6em;
+		height:2.5em;
+		margin-top:0em;
+	}
+	#audio1{
+		float:left;
+		margin-left:6em;
+		height:2.5em;
+		margin-top:5em;
+		
+		
+	}
+	
+	
+	.mesimi1 input,.mesimi2 input{
+		width:15em;
+		
+		}
+		
+		#video1{
+			margin-top:8em;
+			margin-bottom:0em;
+			margin-right:15em;
+			float:left;
+			display:inline;
+			}
+			
+		.mesimiv input{
+			
+			width:20em;
+			height:2.5em;
+		}
+		
+		#pergj {
+			margin-top:9em;
+			display:inline;
+			float:left;
+			
+		}
+		.story{
+			margin-top:1em;
+			
+			
+		}
+		.story h3{
+			color:blue;
+			font-weight:bold;
+			
+		}
+		
+		.story p{
+			
+			column-count: 4;
+			column-gap: 40px;
+			column-rule-style: solid;
+			
+		}

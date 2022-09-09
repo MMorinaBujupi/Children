@@ -1,0 +1,313 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="learn.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+ <style>
+   #kthehu {
+    border-width: 5px;
+    background-color: #92a8d1;
+	text-color: black;
+    border-style: solid;
+    position: fixed;
+    padding: 3px;
+    bottom: 0;
+    right: 0;
+	}  
+ </style>
+<script>
+$(document).ready(function(){
+    $("#butoni").click(function(){
+        $("#forma").slideToggle("slow");
+    });
+	});
+	$(document).ready(function(){
+	$("cite").on("click",function(){
+	$("cite").animate({left: '90px'}, "slow");
+        $("cite").animate({fontSize: '1.3em'}, "slow");
+	
+	});
+});
+
+</script>
+<title>Mesojme</title>
+</head>
+<body>
+
+<!-- Ndryshimi i background varesisht nga koha lokale -->
+<div id="koha">
+
+<button type="button" onclick="myFunction()">Background</button>
+</div>
+
+<script>
+function myFunction() {
+var ora = new Date().getHours(); 
+if(ora < 18 && ora>=6) 
+	{
+		 document.body.style.backgroundColor = "white";
+    document.body.style.backgroundImage = "url('Photos/day.jpg')";
+     } 
+else if (ora>=18 || ora<6)
+{
+		 document.body.style.backgroundColor = "#darkblue";
+    document.body.style.backgroundImage = "url('Photos/night.jpg')";
+			}
+	};
+</script>
+
+
+
+
+
+<p id="ora"></p>
+<script>
+var d = new Date();
+document.getElementById("ora").innerHTML = d;
+</script>
+<!-- Pershendetjet varesisht nga dita e javes -->
+<p id="dita"></p>
+<script>
+switch (new Date().getDay()) {
+    case 0:
+        day = "Fundjavë të kendshme ";
+        break;
+    case 1:
+        day = "Ju urojmë një të  hënë të bukur  ";
+        break;
+    case 2:
+        day = "Ju urojmë një të  martë të bukur ";
+        break;
+    case 3:
+        day = "E merkurë,mesjavë te kendshme";
+        break;
+    case 4:
+        day = "Të enjte te kendshme";
+        break;
+    case 5:
+        day = "E premte,e preferuara jonë";
+        break;
+    case 6:
+        day = "Fundjavë të kendshme";
+}
+document.getElementById("dita").innerHTML=day;
+</script>
+
+<div id="faqja">
+<div id="header">
+ <div class="titulli">
+  <h2 align="center";> M&euml;sojm&euml;</h2>
+</div>
+   <cite>Mos&nbsp;prit&nbsp;koh&euml;&nbsp;dhe&nbsp;dit&euml;&nbsp;t&euml;&nbsp;q&euml;lluar&nbsp;p&euml;r&nbsp;m&euml;sim!
+     <mark>Dije&nbsp;se&nbsp;&ccedil;do&nbsp;dit&euml;&nbsp;&euml;sht&euml;&nbsp;e&nbsp;q&euml;lluar&nbsp;p&euml;r&nbsp;m&euml;sim.</mark>
+	      </cite>
+
+</div>
+  <div class="lendet">
+    <table align="center">
+      <tr>
+       <td><p align="center"></p>
+        <a href="#Anglisht"><img src="Photos\9.jpg" style="width:370px;height:170px;" alt="Anglisht"></img>
+         </a></td>
+       <td><p align="center"></p>
+        <a  href="#Matematik&euml"><img src="Photos\7.jpg" style="width:370px;height:170px;" alt="mat"></img>
+         </a></td>
+       <td><p align="center"></p>
+        <a  href="#ndryshme"><img src="Photos\11.jpg" style="width:370px;height:170px;" alt="ndryshme"></img>
+         </a></td>
+       <td><p align="center"></p>
+        <a  href="#Punedore"><img src="Photos\12.jpg" style="width:370px;height:170px;" alt="art"></img>
+         </a></td>
+      </tr>
+   </div>
+<tr>
+ <td>
+ <div id="Anglisht">
+  <h2>Anglisht</h2>
+  <ol>
+   <li><h4>Fillestare</h4></li>
+    <ul style="list-style-type:circle">
+     <li><a href="https://www.youtube.com/watch?v=gjtm5pmeX4Y" target="blank">Alfabeti</a></li>
+     <li><a href="https://www.youtube.com/watch?v=tKLtpgXMOZA" target="blank">Numrat 0-10</a></li>
+     <li><a href="https://www.youtube.com/watch?v=jYAWf8Y91hA" target="blank">Ngjyrat</a></li>
+     <li><a href="https://www.youtube.com/watch?v=etuC1PQiAyI" target="blank">Shprehje te rastit</a></li>
+    </ul>
+   <li><h4>Shqiptimi dhe Gramatika</h4></li>
+     <ul style="list-style-type:circle">
+      <li><a href="http://pbskids.org/superwhy/">Filmi <span style="font-weight:bold">"Super Lexuesit"</span></a></li>
+      <li><a href="http://sq.enlizza.com/gramatike-mesoni-anglisht/">Meso rregullat gramatikore</a></li>
+   
+     </ul>
+  </ol>
+ </td>
+ </div>
+<td>
+ <div id="Matematike">
+  <h2>Matematik&euml;</h2>
+ <dl>
+  <dd><em><strong>Mosha 4-7</strong></em></dd>
+   <dt><a href="https://www.youtube.com/watch?v=0Y4Ce5-nrvk" target="blank">Mbledhja dhe zbritja e numrave</a></dt>
+   <dt><a href="http://www.slideshare.net/YsniIsmaili/shumzimi-i-numrave-dhjetor">Shum&euml;zimi dhe pjestimi i numrave</a></dt>
+  <dd><em><strong>Mosha 7-10</strong></em></dd>
+   <dt><a href="https://sq.wikipedia.org/wiki/Thyesa" target="blank">Thyesat</a></dt>
+   <dt><a href="https://prezi.com/wxwy0wlq9_kq/figurat-dhe-trupat-gjeometrike/" target="blank">
+    Figurat&nbsp;dhe&nbsp;trupat&nbsp;gjeometrik</a></dt>
+  <dd><em><strong>Mosha 10-15</strong></em></dd>
+   <dt><a href="https://sq.wikipedia.org/wiki/Ekuacionet_e_shkall%C3%ABs_s%C3%AB_p%C3%ABrgjithshme">
+    Ekuacionet</a></dt>
+   <dt><a href="http://www.akademiaedijes.net/mesimet/matematike/algjeber/inekuacionet/inekuacionet-i">
+    Inekuacionet</a></dt>
+  </dl>
+ </td>
+ </div>
+ 
+ 
+ <td>
+ <div id="ndryshme">
+ <h2>T&euml&nbsp;ndryshme</h2>
+<dl>
+  <dt><strong>Perralla</strong></dt>
+  <dd><a href="https://www.youtube.com/watch?v=3OKGbVf2mdQ&list=PLHQCUZRDHWtvy9Hr9igFHdeASnJEOjvoO">
+  Seriali <span style="font-weight:bold">"Zana"</span></a></dd>
+  <dt><strong>Shkence</strong></dt>
+  <dd><a href="http://www.shtepiaelibrit.com/store/sq/45-enciklopedi-per-femije">
+  Enciklopedi&nbsp;e&nbsp;libra</a></dd>
+</dl>
+
+<dl>
+  <dt><strong>Kompjuterik&euml;</strong></dt>
+  <dd>Seriali <span style="font-weight:bold">"Kompjuteri&nbsp;im"</span></dd>
+  <ul>
+<li><a href="https://www.youtube.com/watch?v=KFzAQF1Qt9E&index=14&list=PL5ohhePxgDrxSCx9kQgfYrQP1HtloHujG" target="blank">
+Episodi 1</a></li>
+   <li><a href="https://www.youtube.com/watch?v=LcYEHgs5z04&index=28&list=PL5ohhePxgDrxSCx9kQgfYrQP1HtloHujG" target="blank">
+   Episodi 2</a></li>
+   <li><a href="https://www.youtube.com/watch?v=9PseIdh4sZo&list=PL5ohhePxgDrxSCx9kQgfYrQP1HtloHujG&index=16" target="blank">
+   Episodi 3</a></li>
+  <p><a href="https://www.youtube.com/playlist?list=PL5ohhePxgDrxSCx9kQgfYrQP1HtloHujG" target="blank">
+  M&euml;&nbsp;shum&euml;</a></p>
+  </ul>
+
+ 
+ </ul>
+ </td>
+ </div>
+ <td>
+ <div id="Punedore">
+ <h2>Art&Pun&euml;dore</h2>
+ <dl>
+  <dt><strong>Art</strong></dt>
+  <dd>Seriali <span style="font-weight:bold">"Xhaxhi piktori"</span></dd>
+  <ul style="list-style-type:square">
+  <li><a href="https://www.youtube.com/watch?v=ScByN-ZlWDs" target="blank">Breshka</a></li>
+  <li><a href="https://www.youtube.com/watch?v=pnN-HJ2_sxQ" target="blank">Akuariumi</a></li>
+  <li><a href="https://www.youtube.com/watch?v=mR9-BO4m2fM" target="blank">Varka</a></li>
+  <p><a href="https://www.youtube.com/playlist?list=PL5ohhePxgDrxfMbpBUyVuColfnrvDZbwz" target="blank">M&euml; shum&euml;</a></p>
+  </ul>
+  <dt><strong>Pun&euml;dore</strong></dt>
+  <dd>Seriali <span style="font-weight:bold">"Art&Fun"</span></dd>
+  <ul style="list-style-type:square">
+  <li><a href="https://www.youtube.com/watch?v=cFUoIeAUiOs" target="blank">Emisioni 1</a></li>
+   </ul>
+   <dd>Seriali <span style="font-weight:bold">"Tips"</span></dd>
+   <ul style="list-style-type:square">
+   <li><a href="https://www.youtube.com/watch?v=-N2Ad9bcBIk" target="blank">Episodi 1</a></li>
+   <li><a href="https://www.youtube.com/watch?v=7rjNd6Uioro" target="blank">Episodi 2</a></li>
+   <li><a href="https://www.youtube.com/watch?v=eA-CDMPx0EI" target="blank">Episodi 3</a></li>
+    </ul>
+   </dl>
+ </div>
+ </td>
+ </tr>
+ <p id="kthehu"><a href="kryefaqja.html">Kthehu</a></p>
+ </table>
+ <hr>
+
+ <div id="kalkulo">
+ <p>MiniKalkulator</p>
+ <div class="rreshti1">
+ <a href="shuma.html"><button>&minus;&plus;</button></a>
+<a href="prodhimi.html" target="blank"><button>&lowast;/&and;</button></a>
+<a href=pjestimi.html><button>/&radic;</button></a>
+ </div>
+ 
+<div class="rreshti2">
+ <a href="vleraMaxMin.html"><button>Max/Min</button></a>
+<a href="Perimetri.html"> <button>Perimetri</button></a>
+ <a href="siperfaqja.html"><button>Siperfaqja</button></a>
+</div>
+ <div id=eng>
+ <a href="ngjyra.html">
+ <button id="practise" align="center">Practise your English</button>
+ </a>
+ </div>
+   
+</div>
+
+ 
+ <!-- Mos shfaqja e nje pjese te faqes-jo shume te rendesishme per perdoruesin -->
+ <div id="detaje">
+<details>
+ <summary>Forma...</summary>
+ <article id="detaje">
+ 
+<div id="fillform">
+<button id="butoni">Plotesoni form&euml;n</button><br>
+<class id="forma">
+
+<form name="myform" method="get" action="action_page.php">
+<fieldset>
+<legend><pre>P&euml;rshtypjet</pre></legend>
+ <label><p>Pjes&euml;t e preferuara</p></label> 
+ <input type="checkbox" name="mire"/>Matematik&euml;
+ <input type="checkbox" name="mire"/>Anglisht
+ <input type="checkbox" name="mjaftueshem"/>T&euml;&nbsp;ndryshme
+ <input type="checkbox" name="mire"/>Art&Pun&euml;dore
+ 
+ 
+ 
+ 
+ 
+  <label><p>Kuptueshm&euml;ria&nbsp;e&nbsp;materialit</p></label>
+ <input type="radio" name="lenda" value="lenda1"/>Shum&euml;
+ <input type="radio" name="lenda" value="lenda2"/>Kuptuesh&euml;m
+ <input type="radio" name="lenda" value="lenda3"/>Pak
+ <input type="radio" name="lenda" value="lenda4"/>Aspak
+ 
+ <p><label>Komentet dhe sygjerimet:</label></p>
+ <textarea rows="8" cols="61" name="Pershtypjet" placeholder="Komentet tuaja" required></textarea>
+ <p><button type="submit" name="button">Paraqit</button>
+ <button type="reset" name="button2">Rifillo</button></p>
+ </fieldset>
+ </form>
+</class>
+</div>
+</br>
+
+
+<script>
+$(document).ready(function(){
+    $("button").click(function(){
+        $("pre").fadeToggle();
+       
+    });
+});
+</script>
+
+<section id="garantim">
+
+<button id="permbledhje">Materialet</button></br>
+
+<pre><small>
+Materialet e sygjeruara n&euml; faqe 
+jan&euml; nga burime t&euml; sigurta 
+dhe t&euml; p&euml;rshtatshme p&euml;r moshat e cekura
+</small></pre>
+</section>
+</article>
+</details>
+</div>
+</body>
+</html>

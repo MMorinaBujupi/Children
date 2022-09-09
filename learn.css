@@ -1,0 +1,237 @@
+/*vendosja e permbajtjes ne border*/
+body,#Anglisht,#Matematike,#Punedore,#ndryshme
+{
+	font-family:"Annie Use Your Telescope" ,Monaco,monospace;
+    font-size:25px;
+	font-style:bold;
+	color:black;
+	
+	}
+	
+	
+#faqja
+	{
+	background: url(Photos/books2.png);
+    background-size: 2000px 250px;
+    background-repeat: no-repeat;
+	margin-left:1.3em;
+
+	
+}
+#faqja cite{
+	margin-left:9em;
+	float:left;
+	margin-top:2em;
+	 }	
+
+@keyframes animacioni{
+    0%   {background-color: linen;}
+    25%  {background-color: pink;}
+    50%  {color: black;}
+    75%  {color: black;}
+    100% {color: yellow;}
+}
+
+
+	#dita{
+		
+		color:#E6E6FA;
+		 animation-name: animacioni;
+  animation-duration: 6s;
+  animation-iteration-count:2;
+		
+		
+	}
+	
+	#koha button{
+		width:10em;
+	float:left;
+	font-size:1em;
+	background-color:#E6E6FA;
+		
+	}
+	
+	summary{
+		font-size:1em;
+		font-style:Monospace
+		}
+
+		#kalkulo p{
+			
+			margin-left:10em;
+	font-weight:bold;
+		
+		}
+		
+.rreshti1 button{
+		width:8em;
+		height:5em;
+		font-size:1em;
+		color:red;
+		display:inline;
+	}
+	.rreshti2 button{
+		width:8em;
+	height:5em;
+	font-size:1em;
+	color:blue;
+	display:inline;
+	}
+	.rreshti2{
+		display:inline;
+		
+	}
+	
+	
+	#detaje{
+		margin-top:8em;
+		
+		
+	}
+	
+	#garantim {
+	
+   
+   margin-top:1em;
+float:right;
+display:block;
+
+	}
+
+#practise{
+	width:8em;
+		height:3em;
+		color:purple;
+		background-color:pink;
+	
+		margin-left:25em;
+		margin-top:0em;
+		font-size:1.3em;
+		font-style:sans-serif;
+	
+	
+	
+}
+	
+
+	
+	
+
+	.titulli {
+	margin-top:0px;	
+	color:black;
+	font-size:45px;
+	font-family:Harrington, 'Sofia',sans-serif;
+	text-shadow: 2px 2px 4px white;
+	}
+	
+	
+	
+	.lendet img{
+		border-style:solid;
+		size:1em;
+		border-color:#92a8d1;
+		
+	}
+
+
+body{
+
+	background:#6495ED;
+	 background-clip: content-box;
+	 
+	
+	 
+}
+	
+	
+
+#Anglisht,#Matematike,#ndryshme{
+	border-style: solid;
+	border-color: #034f84;
+	
+	 border-width: 10px;
+	 padding-right: 10px;
+	 padding-top: 0px;
+	 padding-left:5px;
+	 padding-bottom: 10px;
+	 margin-right: 10px;
+	 margin-top:5px;
+    border-radius: 3px;
+	--webkit-border-radius:3px;
+	height: 500px;
+	width:350px;
+overflow: hidden;
+    
+}
+
+
+#Punedore
+{
+	border-style: solid;
+	border-color:#034f84;
+	
+	 border-width: 10px;
+	 padding-right: 10px;
+	 padding-top: 10px;
+	 padding-left:5px;
+	 padding-bottom: 10px;
+	  margin-right: 10px;
+	 margin-top:5px;
+	border-radius: 3px;
+	--webkit-border-radius:3px;
+    height: 500px;
+	width:350px;
+      overflow: hidden;
+	}
+
+#forma{
+	
+	margin-left:5px;
+	margin-right:150px;
+	margin-bottom:5px;
+	margin-top:10px;
+	float: left;
+
+	}
+
+#ora{
+	
+	text-align:right;
+	font-size:18px;
+	color:black;
+	font-weight:bold;
+	
+	
+}
+	#fillform{
+		float:left;
+		display:block;
+		}
+#fillform button#butoni{
+	background-color:lightgrey;
+	font-style:bold;
+	font-size:1em;
+	float:left;
+
+	
+            }
+
+a:link {
+    color: black;
+}
+
+
+a:visited {
+    color: black;
+}
+
+
+a:hover {
+    color: hotpink;
+}
+
+
+a:active {
+    color: blue;
+}

@@ -1,0 +1,38 @@
+<html>
+
+<head>	
+</head>
+<body>
+
+
+
+<p id="pr"></p>
+
+<script>
+var n=prompt("Per pjestim shenoni 1 per rrenje katrore 2")
+if(n==1)
+{
+var numri1=prompt("Numri i pare")
+var numri2=prompt("Numri i dyte")
+function pjestimi(a,b){
+return a / b;
+
+}
+document.getElementById("pr").innerHTML=pjestimi(numri1,numri2);
+}
+else if(n==2)
+{
+var numri=prompt("Numri")
+
+function rrenjaKatrore(a){
+
+return Math.sqrt(a);
+}
+document.getElementById("pr").innerHTML=rrenjaKatrore(numri);
+}
+else 
+document.write("Ju lutem shenoni 1 ose 2")
+
+</script>
+</body>
+</html>

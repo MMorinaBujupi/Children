@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Filma</title>
+
+<style>
+.mySlides {display:none;}
+
+.myclass{
+         font-size: 30px;
+		 font-family:Harrington;
+		 color:red;
+         padding-top: 50px;
+         padding-right: 320px;
+         padding-bottom: 50px;
+         padding-left: 250px;
+        -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+         transition: width 2s, height 2s, transform 2s;
+		 }
+
+		 .myclass:hover {
+		 
+                      width: 300px;
+					 -webkit-transform: rotate(180deg); 
+                      transform: rotate(180deg);
+					}
+body{
+ background-image: url("Photos/stars.jpg");
+ }
+
+
+</style>
+</head>
+
+<body>
+
+<h2 class="myclass">M&euml; shum&euml; filma vizatimor&euml;</h2>
+
+<div>
+  <img class="mySlides" src="Photos/teletubies.jpg" width="1000" height="500">
+  <img class="mySlides" src="Photos/pinoku.jpg" width="1000" height="500">
+  <img class="mySlides" src="Photos/ffvv.jpg" width="1000" height="500">
+  <img class="mySlides" src="Photos/ariel.jpg" width="1000" height="500">
+  <img class="mySlides" src="Photos/bob.jpg" width="1000" height="500">
+  <img class="mySlides" src="Photos/bambi.jpg" width="1000" height="500">
+  <img class="mySlides" src="Photos/disneyprincess.jpg" width="1000" height="500">
+  <img class="mySlides" src="Photos/poster.jpg" width="1000" height="500">
+  
+</div>
+
+<script>
+var myIndex = 0;
+changeimage();
+
+function changeimage() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(changeimage, 2000); // Nderron figurat cdo 2 sekonda
+}
+</script>
+
+
+<!--Perdorimi i RegExp-->
+<p><b>P&euml;r m&euml; shum&euml; filma vizatimor&euml; :</b></p>
+
+<button onclick="myFunction()">Kliko</button>
+
+<p id="regexp">Vizitoni Albkino.co!</p>
+
+<script>
+function myFunction() {
+    var str = document.getElementById("regexp").innerHTML; 
+    var txt = str.replace(/albkino.co/i,"Ab-film.blogspot");
+    document.getElementById("regexp").innerHTML = txt;
+}
+</script>
+
+
+
+
+</body>
+</html>

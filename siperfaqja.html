@@ -1,0 +1,55 @@
+<html>
+<head>	
+</head>
+<body>
+
+
+
+<p id="pr"></p>
+
+<script>
+var n=prompt("Shenoni 1 per katror,2 per drejtkendesh,3 per rreth")
+var bye="kaloni"+" "+"bukur"
+if(n==1)
+{
+var p1=prompt("Vlera e brinjeve a dhe b(katrori ka brinje te barabarta)")
+function SKatrorit(a)
+{
+return Math.pow(a,2);
+
+}
+document.getElementById("pr").innerHTML="S= "+SKatrorit(p1);
+
+
+
+}
+else if(n==2)
+{
+var p2=prompt("Brinja e drejtkendeshit")
+var p3=prompt("Brinja tjeter e drejtkendeshit")
+function sDrejt(a,b){
+return a*b;
+}
+document.getElementById("pr").innerHTML="S= "+sDrejt(p2,p3);
+
+
+}
+else if(n==3)
+{
+var p4=prompt("Rrezja e rrethit")
+function sRrethit(a)
+{
+return Math.PI * Math.pow(a,2);
+
+}
+document.getElementById("pr").innerHTML="S= "+sRrethit(p4)
+
+}
+else if(n!==1 || n!==2 || n!==3)
+{
+document.write("Ju lutem shenoni 1 ,2 ose 3")
+}
+document.write(" "+bye);
+
+</script>
+</body>

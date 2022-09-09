@@ -1,0 +1,93 @@
+<html>
+
+<head>	
+</head>
+<body>
+
+
+
+<p id="pr"></p>
+
+<script>
+var n=prompt("Per Vleren Maksimale shenoni 1 per vleren minimale  2")
+var m=prompt("Sa variabla ka funksioni(Max4)")
+if(m==2){
+var p1=prompt("Numri1")
+var p2=prompt("Numri2")
+if (n==1){
+function vleraMax(a,b){
+
+return Math.max(a,b)
+     }
+
+document.getElementById("pr").innerHTML=vleraMax(p1,p2);
+}
+else if(n==2)
+{
+
+function vleraMin(a,b){
+
+return Math.min(a, b);
+     }
+
+document.getElementById("pr").innerHTML=vleraMin(p1,p2);
+
+}
+else {
+document.write("Ju lutem shenoni 1 ose 2")
+
+}
+}
+
+else if(m==3){
+var p1=prompt("Numri1")
+var p2=prompt("Numri2")
+var p3=prompt("Numri3")
+if (n==1){
+function vleraMax(a,b,c){
+
+return Math.max(a,b,c);
+     }
+
+document.getElementById("pr").innerHTML=vleraMax(p1,p2,p3);
+}
+if(n==2)
+{
+function vleraMin(a,b,c){
+return Math.min(a,b,c)
+}
+document.getElementById("pr").innerHTML=vleraMin(p1,p2,p3);
+}
+else
+document.write("Ju lutem shenoni 1 ose 2")
+}
+else if(m==4)
+{
+var p1=prompt("Numri1")
+var p2=prompt("Numri2")
+var p3=prompt("Numri3")
+var p4=prompt("Numri4")
+if(n==1){
+function vleraMax(a,b,c,d){
+
+return Math.max(a,b,c,d);
+     }
+
+document.getElementById("pr").innerHTML=vleraMax(p1,p2,p3,p4);
+}
+if(n==2)
+{
+function vleraMin(a,b,c,d){
+return Math.min(a,b,c,d)
+}
+document.getElementById("pr").innerHTML=vleraMin(p1,p2,p3,p4);
+}
+else 
+document.write("Ju lutem shenoni 1 ose 2")
+}
+else 
+document.write("Ky kalkulator nuk llogarite funksione me me shume se 4 variabla")
+
+
+
+</script>
